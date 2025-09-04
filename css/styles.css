@@ -1,0 +1,1593 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Onest", sans-serif;
+    font-weight: 50rem;
+    color: black;
+    text-align: center;
+    padding-right: 45rem;
+}
+
+h2 {
+    font-family: "Onest", sans-serif;
+    font-weight: 500;
+    color: white;
+    text-align: left;
+    margin-left: 8rem;
+}
+
+h3 {
+    font-family: "Onest", sans-serif;
+    font-weight: 400;
+    color: black;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.95rem;
+    color: rgb(34, 34, 34);
+}
+
+.price {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+/*---------------HEADER---------------*/
+
+.headerIndex {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem 1rem;
+    background-color: rgb(42, 42, 42);
+    border-bottom: .125rem solid rgb(149, 255, 117);
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 2.5rem;
+    width: auto;
+    border-bottom: 2px solid rgb(149, 255, 117);
+}
+
+.navContainer {
+    display: flex;
+    justify-content: center;
+
+}
+
+.navBar {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar li a {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-decoration: underline rgb(149, 255, 117);
+    text-decoration-thickness: 0.1rem;
+    transition: color 0.3s;
+}
+
+.navBar li a:hover {
+    color: gold;
+}
+
+.userActions {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.userActions a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.userActions a.userProfile {
+    border-bottom-color: rgb(149, 255, 117);
+}
+
+.userActions a:hover {
+    color: gold;
+}
+
+
+/*---------------MAIN/HOME---------------*/
+
+.mainIndex {
+    background-color: rgb(73, 73, 100);
+    padding: 1rem;
+}
+
+.imageContainer {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.imageLink {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.bannerImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 1.25rem;
+}
+
+.textoOverlay {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: white;
+    text-align: left;
+}
+
+.textoOverlay h1 {
+    margin: 0;
+    color: white;
+}
+
+.textoOverlay p {
+    font-size: medium;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+.viewAllButton {
+    text-align: right;
+}
+
+.viewAllButton a {
+    background-color: rgb(149, 255, 117);
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: .25rem;
+    display: inline-block;
+    margin-right: 13rem;
+}
+
+.viewAllButton a:hover {
+    color: rgb(255, 0, 0);
+    filter: drop-shadow(.3125rem .3125rem .3125rem rgba(255, 217, 0, 0.397));
+
+}
+
+.bigCardContainer {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.bigCard {
+    width: 70%;
+    height: 13.8rem;
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    background-color: rgba(217, 217, 217, 0.36);
+    border-radius: 1rem;
+    border-style: solid;
+    border-color: rgb(149, 255, 117);
+    line-height: 1.7rem;
+    box-shadow: 0 0 .625rem .3125rem rgba(149, 255, 117, 0.5);
+
+}
+
+.contentBigCard p {
+
+    text-align: left;
+
+}
+
+.contentBigCard h3 {
+    text-align: left;
+
+}
+
+.bigCardImg {
+    text-align: center;
+}
+
+.bigCardImg img {
+    width: 14rem;
+    height: 13.5rem;
+    display: flex;
+    justify-items: auto;
+    border-top-left-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+    border-style: solid;
+    border-color: rgba(149, 255, 117);
+    box-shadow: 0 0 .625rem .3125rem rgba(149, 255, 117, 0.5);
+
+}
+
+.buttonsBigCard {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.detailsButton {
+    background-color: rgb(73, 73, 100);
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: .25rem;
+    display: inline-block;
+}
+
+.detailsButton:hover {
+    color: rgb(255, 0, 0);
+    filter: drop-shadow(.3125rem .3125rem .3125rem rgba(255, 217, 0, 0.397));
+}
+
+.buyNowButton {
+    background-color: rgb(149, 255, 117);
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: .25rem;
+    display: inline-block;
+}
+
+.buyNowButton:hover {
+    color: rgb(255, 0, 0);
+    filter: drop-shadow(.3125rem .3125rem .3125rem rgba(255, 217, 0, 0.397));
+}
+
+.bestSellerSection {
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.mediumCardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.mediumCard {
+    background-color: rgba(217, 217, 217, 0.36);
+    text-align: center;
+    padding: 0rem;
+    padding-bottom: 0.5rem;
+    border-radius: .375rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    border-style: solid;
+    border-color: rgb(149, 255, 117);
+    box-shadow: 0 0 .3125rem .1875rem rgb(149, 255, 117, 0.3);
+}
+
+.mediumCard img {
+    width: 18rem;
+    border-radius: .375rem;
+    border-right: solid rgb(149, 255, 117);
+    border-left: solid rgb(149, 255, 117);
+    border-bottom: solid rgb(149, 255, 117) 0.06rem;
+}
+
+.fotoMachinarium {
+    width: 50%;
+}
+
+.newsGridContainer {
+    width: 100%;
+    padding-left: 30%;
+    padding-right: 25%;
+    padding-top: 1rem;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+}
+
+
+.newsCard {
+    width: 18rem;
+    height: 12rem;
+    background-color: rgba(217, 217, 217, 0.36);
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 0.375rem;
+    box-shadow: 0 0 .3125rem .1875rem rgba(0, 0, 0, 0.486);
+}
+
+.newsCard img {
+    width: 100%;
+    border-radius: 0.375rem;
+}
+
+.newsCard h3 {
+    text-align: left;
+    padding-left: 0.5rem;
+}
+
+.newsCard p {
+    text-align: left;
+    padding-left: 0.5rem;
+}
+
+.newsCard img:hover {
+    filter: drop-shadow(.3125rem .3125rem .3125rem rgba(255, 217, 0, 0.397))
+}
+
+/*---------------FOOTER---------------*/
+
+.footer {
+    background-color: rgb(42, 42, 42);
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer img {
+    height: 2rem;
+    width: auto;
+}
+
+.footer p {
+    color: white;
+    margin-left: auto;
+}
+
+.informationNav {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.informationNav li a {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9rem;
+    color: white;
+    text-decoration: none;
+}
+
+.logoIndex {
+    border-bottom: solid;
+    border-color: rgb(149, 255, 117);
+}
+
+/*---------------ABOUT US---------------*/
+.mainAboutUs {
+    margin: 1rem;
+    padding-top: 2rem;
+}
+
+.mainAboutUs h2 {
+    color: black;
+    text-align: left;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    line-height: 1.7rem;
+    font-size: 3.5rem;
+}
+
+.mainAboutUs p {
+    color: black;
+    font-size: medium;
+    text-align: left;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    line-height: 1.7rem;
+}
+
+.aboutUs {
+    width: 100%;
+}
+
+.aboutUsContent {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 6.25rem 6.25rem;
+    align-items: left;
+    gap: 2rem;
+}
+
+.aboutUsImg {
+    text-align: right;
+}
+
+.aboutUsImg img {
+    max-width: 100%;
+    height: auto;
+    border-radius: .5rem;
+}
+
+.contact {
+    margin-top: 0.5rem;
+}
+
+/*---------------NEWS---------------*/
+
+.mainNews {
+
+    background-color: rgb(73, 73, 100);
+    padding: 2rem;
+    padding-top: 8rem;
+}
+
+.latestNews {
+    width: 60rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+    gap: 10rem;
+    border-bottom-style: ridge;
+    border-color: rgba(149, 255, 117, 0.562);
+}
+
+.newsBigCard {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(217, 217, 217, 0.36);
+    border-radius: 1rem;
+    border-style: groove;
+    border-color: rgba(149, 255, 117, 0.527);
+    box-shadow: 0 0 .3125rem .1875rem rgba(0, 0, 0, 0.486);
+}
+
+.newsBigCardBanner p {
+    color: rgb(149, 255, 117);
+}
+
+.newsBigCardBanner img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.newsBigCardInfo {
+    text-align: center;
+}
+
+.otherNews {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 8rem;
+}
+
+.otherNewsCard {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: rgba(46, 46, 46);
+    border-radius: 1rem 1rem 0 0;
+    border-bottom: solid;
+    border-width: .0625rem;
+    border-color: rgba(149, 255, 117, 0.342);
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.486);
+
+}
+
+.oterNewsCardBanner img {
+    width: 12rem;
+    border-radius: 1rem 0 0 0;
+    border: solid .0625rem rgb(149, 255, 117);
+
+}
+
+.oterNewsCardBanner p {
+    color: rgb(149, 255, 117);
+}
+
+.otherNewsCardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+
+}
+
+.otherNewsCardInfo h4 {
+    font-size: large;
+    color: white;
+}
+
+.otherNewsCardInfo p {
+    color: white;
+}
+
+/* ---------------------- USER/PROFILE -------------------- */
+
+.profileMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    background-color: rgb(73, 73, 100);
+    padding-top: 8rem;
+
+}
+
+
+.profile {
+    width: 100%;
+    max-width: 63rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profileBanner {
+    width: 100%;
+    height: 15rem;
+    overflow: hidden;
+    border: .125rem solid rgb(149, 255, 117);
+    border-radius: 0.5rem;
+    box-shadow: .0625rem .0625rem .3125rem .1875rem rgba(0, 0, 0, 0.486);
+}
+
+.profileBanner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    margin-top: -3rem;
+    padding: 0 1rem;
+    position: relative;
+}
+
+.profileAvatar {
+    width: 8rem;
+    height: 8rem;
+    border: .125rem solid rgb(149, 255, 117);
+    border-radius: 0.25rem;
+    overflow: hidden;
+    box-shadow: .0625rem .0625rem .3125rem .1875rem rgba(0, 0, 0, 0.486);
+}
+
+.profileAvatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    margin: 0;
+    padding-top: 2.5rem;
+    font-size: 1.5rem;
+}
+
+.status {
+    margin: 0;
+    font-size: 0.9rem;
+    color: rgb(149, 255, 117);
+}
+
+.editProfile {
+    margin-left: auto;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    background: rgb(42, 42, 42);
+    color: white;
+    border: .0625rem solid rgb(149, 255, 117);
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.editProfile:hover {
+    background: rgba(217, 217, 217, 0.36);
+}
+
+.profileStats {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    width: 100%;
+    max-width: 50rem;
+    text-align: center;
+}
+
+.profileStats div h3 {
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.gamesStat p {
+    font-size: large;
+    color: white;
+}
+
+.hoursPlayedStat p {
+    font-size: large;
+    color: white;
+}
+
+.achievemtsStat p {
+    font-size: large;
+    color: white;
+}
+
+.recentlyPlayed {
+    width: 100%;
+    max-width: 56rem;
+}
+
+.recentlyPlayed h3 {
+    border-bottom: .125rem solid rgb(149, 255, 117);
+    padding-bottom: 0.2rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.recentGames {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.recentCard {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+    border: .0625rem solid rgba(0, 0, 0, 0.76);
+    border-radius: 0.5rem;
+    background: rgba(46, 46, 46);
+}
+
+.recentImg {
+    width: 3.75rem;
+    height: 3.75rem;
+    border: .125rem solid rgb(149, 255, 117);
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.recentImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recentText {
+    display: flex;
+    flex-direction: column;
+}
+
+.gameName {
+    margin: 0;
+    font-weight: bold;
+    color: white;
+}
+
+.lastPlayed {
+    margin: 0;
+    font-size: 0.85rem;
+    color: rgb(149, 255, 117);
+}
+
+/*----------------GAME PAGE------------*/
+
+.gameMain {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: rgb(73, 73, 100);
+    color: white;
+    padding-top: 6rem;
+}
+
+.gameContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.gameTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    margin-left: 0;
+    text-decoration: underline;
+}
+
+.rating {
+    font-size: 1.2rem;
+    margin-top: -1rem;
+    color: rgb(149, 255, 117);
+}
+
+.mainImage img {
+    width: 100%;
+    height: 21.875rem;
+    object-fit: fill;
+    border-radius: 0.5rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: .625rem;
+}
+
+.gallery img {
+    width: 100%;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+.gameDescription {
+    font-size: 1rem;
+    color: white;
+}
+
+.tags {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.tags h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.tags p {
+    display: inline-block;
+    background: rgb(51, 51, 51);
+    padding: 0.3rem 0.6rem;
+    border-radius: .25rem;
+    margin-right: 0.3rem;
+    font-size: 0.85rem;
+    color: white;
+}
+
+.systemRequirementsTitle {
+    color: white;
+    border-bottom: solid;
+}
+
+.systemReqs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.systemReqs h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    color: white;
+}
+
+.systemReqs p {
+    margin: 0.2rem 0;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.gameSidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: rgb(34, 34, 34);
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.gameLogo img {
+    width: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.edition {
+    font-size: 0.9rem;
+    color: rgb(170, 170, 170);
+    margin-top: 0.5rem;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(76, 175, 80);
+}
+
+.buttonsSidebar {
+    background: rgb(51, 51, 51);
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.buttonsSidebar:hover {
+    background: rgb(85, 85, 85);
+}
+
+.buttonBuy {
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    background: rgb(76, 175, 80);
+}
+
+.buttonBuy:hover {
+    background: rgb(69, 160, 73);
+}
+
+.gameDetails {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.gameDetails h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: rgb(149, 255, 117);
+    text-decoration: underline white;
+}
+
+.gameDetails p {
+    color: white;
+
+}
+
+.languages h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: rgb(149, 255, 117);
+    text-decoration: underline white;
+}
+
+.languagesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid rgb(68, 68, 68);
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.languagesGrid div {
+    padding: 0.6rem;
+    font-family: "Roboto", sans-serif;
+    ;
+
+}
+
+.languagesGrid .category {
+    font-weight: bold;
+    background-color: rgb(46, 46, 46);
+}
+
+
+/*----------------MEDIA QUERIES-----------------------*/
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/*---------------HEADER---------------*/
+.headerIndex {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.625rem 1rem;
+    background-color: rgb(42, 42, 42);
+    border-bottom: .125rem solid rgb(149, 255, 117);
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 2.5rem;
+    width: auto;
+    border-bottom: 2px solid rgb(149, 255, 117);
+}
+
+.navContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.navBar {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navBar li a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: underline rgb(149, 255, 117);
+    text-decoration-thickness: 0.1rem;
+    transition: color 0.3s;
+}
+
+.navBar li a:hover {
+    color: gold;
+}
+
+.userActions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.userActions a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.userActions a.userProfile {
+    border-bottom-color: rgb(149, 255, 117);
+}
+
+.userActions a:hover {
+    color: gold;
+}
+
+/*----------HOME/INDEX-------------*/
+.mainIndex {
+    background-color: rgb(73, 73, 100);
+    padding: 1rem;
+    margin-top: 4rem;
+}
+
+.imageContainer {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.imageLink {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.bannerImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 1.25rem;
+}
+
+.textoOverlay {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: white;
+    text-align: left;
+}
+
+.textoOverlay h1 {
+    margin: 0;
+    color: white;
+}
+
+.textoOverlay p {
+    font-size: medium;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+.viewAllButton {
+    text-align: right;
+}
+
+.viewAllButton a {
+    background-color: rgb(149, 255, 117);
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: .25rem;
+    display: inline-block;
+}
+
+.bigCardContainer {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0.5rem 0 1.5rem 0;
+}
+
+.bigCard {
+    width: 70%;
+    height: 13.8rem;
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    background-color: rgba(217, 217, 217, 0.36);
+    border-radius: 1rem;
+    border: solid rgb(149, 255, 117);
+    box-shadow: 0 0 .625rem .3125rem rgba(149, 255, 117, 0.5);
+}
+
+.bigCardImg img {
+    width: 14rem;
+    height: 13.5rem;
+    border-radius: 0.75rem 0 0 0.75rem;
+}
+
+.contentBigCard {
+    text-align: left;
+}
+
+.buttonsBigCard {
+    display: flex;
+    gap: 1rem;
+}
+
+.detailsButton {
+    background-color: rgb(73, 73, 100);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: .25rem;
+    text-decoration: none;
+}
+
+.buyNowButton {
+    background-color: rgb(149, 255, 117);
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: .25rem;
+    text-decoration: none;
+}
+
+/*---------------FOOTER---------------*/
+.footer {
+    background-color: rgb(42, 42, 42);
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer img {
+    height: 2rem;
+    width: auto;
+}
+
+.footer p {
+    color: white;
+    margin-left: auto;
+}
+
+.informationNav {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+/*------------MOBILE-------------*/
+@media (max-width: 600px) {
+    body {
+        padding-top: 5rem;
+    }
+
+    .navBar {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .userActions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .imageContainer {
+        width: 95%;
+    }
+
+    .textoOverlay h1 {
+        font-size: 1.5rem;
+    }
+
+    .textoOverlay p {
+        font-size: 0.9rem;
+    }
+
+    .bigCard {
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+    }
+
+    .bigCardImg img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mediumCardsContainer,
+    .newsGridContainer {
+        padding-left: 5%;
+        padding-right: 5%;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .mediumCard,
+    .newsCard {
+        width: 100%;
+    }
+}
+
+/*------------TABLET-------------*/
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        padding-top: 4.5rem;
+    }
+
+    .navBar {
+        gap: 1rem;
+    }
+
+    .imageContainer {
+        width: 90%;
+    }
+
+    .textoOverlay h1 {
+        font-size: 2rem;
+    }
+
+    .textoOverlay p {
+        font-size: 1rem;
+    }
+
+    .bigCard {
+        flex-direction: row;
+        width: 80%;
+        height: auto;
+    }
+
+    .bigCardImg img {
+        width: 12rem;
+        height: auto;
+    }
+
+    .mediumCardsContainer,
+    .newsGridContainer {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .mediumCard {
+        width: 14rem;
+    }
+}
+
+/*--------------DESKTOP---------------*/
+@media (min-width: 1025px) {
+
+    .imageContainer {
+        width: 80%;
+    }
+
+    .bigCard {
+        flex-direction: row;
+        width: 70%;
+        height: 13.8rem;
+    }
+
+    .mediumCardsContainer {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+
+    .newsGridContainer {
+        grid-template-columns: 1fr 1fr;
+        padding-left: 30%;
+        padding-right: 25%;
+    }
+}
+
+
+/*-------------ABOUT US MEDIA QUERIES ------------*/
+
+/*----------------- MOBILE ----------------- */
+
+@media screen and (max-width: 767px) {
+    /* Header */
+    .headerIndex {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem;
+    }
+
+    .navBar {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .userActions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .mainAboutUs {
+        margin: 0.5rem;
+        padding-top: 6rem;
+    }
+
+    .mainAboutUs h2 {
+        font-size: 2rem;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+    .mainAboutUs p {
+        font-size: 0.9rem;
+        margin-left: 1rem;
+    }
+
+    .aboutUsContent {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+
+    .aboutUsImg {
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+}
+
+/*----------------- TABLET ----------------- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Header */
+    .headerIndex {
+        flex-direction: row;
+        padding: 1rem;
+    }
+
+    .navBar {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .userActions {
+        flex-direction: row;
+    }
+
+    .mainAboutUs {
+        margin: 1rem;
+        padding-top: 5rem;
+    }
+
+    .mainAboutUs h2 {
+        font-size: 2.5rem;
+        margin-left: 1.5rem;
+    }
+
+    .mainAboutUs p {
+        font-size: 1rem;
+        margin-left: 1.5rem;
+    }
+
+    .aboutUsContent {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1.5rem;
+    }
+
+    .aboutUsImg {
+        text-align: right;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* -------------------- DESKTOP --------------------*/
+@media screen and (min-width: 1025px) {
+    
+    .headerIndex {
+        flex-direction: row;
+        padding: 1rem 2rem;
+    }
+
+    .navBar {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .userActions {
+        flex-direction: row;
+    }
+
+    .mainAboutUs {
+        margin: 2rem;
+        padding-top: 4rem;
+    }
+
+    .mainAboutUs h2 {
+        font-size: 3.5rem;
+        margin-left: 2rem;
+    }
+
+    .mainAboutUs p {
+        font-size: 1rem;
+        margin-left: 2rem;
+    }
+
+    .aboutUsContent {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+        gap: 2rem;
+    }
+
+    .aboutUsImg {
+        text-align: right;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+}
+
+
+/*---------------- MOBILE ----------------*/
+@media screen and (max-width: 600px) {
+    
+    .headerIndex {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem 1rem;
+    }
+
+    .navBar {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .userActions {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .mainNews {
+        padding: 1rem;
+        padding-top: 6rem;
+    }
+
+    .latestNews {
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .newsBigCard {
+        width: 100%;
+    }
+
+    .otherNews {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        gap: 1rem;
+    }
+
+    .otherNewsCard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .oterNewsCardBanner img {
+        width: 100%;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .otherNewsCardInfo {
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/*---------------- TABLET ----------------*/
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+    .headerIndex {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.625rem 1rem;
+    }
+
+    .navBar {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .userActions {
+        flex-direction: row;
+    }
+
+    .mainNews {
+        padding: 2rem;
+        padding-top: 7rem;
+    }
+
+    .latestNews {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .newsBigCard {
+        width: 45%;
+    }
+
+    .otherNews {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        gap: 1.5rem;
+    }
+
+    .otherNewsCard {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .oterNewsCardBanner img {
+        width: 10rem;
+    }
+
+    .otherNewsCardInfo {
+        padding-top: 1rem;
+    }
+
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+}
+
+/*---------------- DESKTOP ----------------*/
+@media screen and (min-width: 1025px) {
+    
+    .headerIndex {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.625rem 2rem;
+    }
+
+    .navBar {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .userActions {
+        flex-direction: row;
+    }
+
+    .mainNews {
+        padding: 2rem 3rem;
+        padding-top: 8rem;
+    }
+
+    .latestNews {
+        flex-direction: row;
+        gap: 10rem;
+        width: 60rem;
+        margin: 0 auto;
+    }
+
+    .newsBigCard {
+        width: 100%;
+    }
+
+    .otherNews {
+        margin-left: 4rem;
+        margin-right: 8rem;
+        gap: 2rem;
+    }
+
+    .otherNewsCard {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .oterNewsCardBanner img {
+        width: 12rem;
+    }
+
+    .otherNewsCardInfo {
+        padding-top: 2rem;
+    }
+
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1rem 3rem;
+    }
+}
