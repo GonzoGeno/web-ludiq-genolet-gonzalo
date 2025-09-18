@@ -497,6 +497,48 @@ input, textarea {
     font-size: 0.8rem;
   }
 }
+@media (max-width: 767px) {
+  .mainAboutUs {
+    padding: 1rem;
+    gap: 2rem;
+  }
+  .mainAboutUs h2 {
+    padding-top: 8rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .mainAboutUs .aboutUs .aboutUsContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .mainAboutUs .aboutUs .aboutUsContent p {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+  .mainAboutUs .aboutUs .aboutUsContent .aboutUsImg {
+    width: 100%;
+  }
+  .mainAboutUs .aboutUs .aboutUsContent .aboutUsImg img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+  }
+  .mainAboutUs .contact {
+    padding: 1rem;
+    text-align: center;
+  }
+  .mainAboutUs .contact h2 {
+    padding-top: 0rem;
+  }
+  .mainAboutUs .questions h2 {
+    padding-top: 0rem;
+  }
+  .mainAboutUs .frequentQuestion,
+  .mainAboutUs .frequentAnswer {
+    font-size: 0.9rem;
+  }
+}
 @media (min-width: 768px) and (max-width: 1023px) {
   .headerIndex {
     padding: 0.75rem 1.5rem;
@@ -568,6 +610,96 @@ input, textarea {
   .mainIndex .blogAndNews .newsGridContainer {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mainAboutUs {
+    padding: 1.5rem;
+    gap: 2.5rem;
+  }
+  .mainAboutUs h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .mainAboutUs .aboutUs .aboutUsContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .mainAboutUs .aboutUs .aboutUsContent p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .mainAboutUs .aboutUs .aboutUsContent .aboutUsImg {
+    width: 80%;
+  }
+  .mainAboutUs .aboutUs .aboutUsContent .aboutUsImg img {
+    width: 100%;
+    border-radius: 0.3rem;
+  }
+  .mainAboutUs .contact {
+    padding: 1.2rem;
+    text-align: center;
+  }
+  .mainAboutUs .frequentQuestion,
+  .mainAboutUs .frequentAnswer {
+    font-size: 1rem;
+  }
+}
+.mainAboutUs {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  background-color: white;
+}
+.mainAboutUs h2 {
+  font-size: 3rem;
+  color: black;
+  margin-bottom: 1rem;
+}
+.mainAboutUs .aboutUs .aboutUsContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.mainAboutUs .aboutUs .aboutUsContent p {
+  flex: 2;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+.mainAboutUs .aboutUs .aboutUsContent .aboutUsImg {
+  flex: 1;
+}
+.mainAboutUs .aboutUs .aboutUsContent .aboutUsImg img {
+  width: 100%;
+  height: auto;
+}
+.mainAboutUs .contact {
+  background-color: rgb(149, 255, 117);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  border: solid 2px black;
+  color: black;
+  box-shadow: 2px 3px 0px 0px rgb(0, 0, 0);
+}
+.mainAboutUs .contact h2 {
+  margin-bottom: 1rem;
+}
+.mainAboutUs .contact p {
+  margin: 0.3rem 0;
+}
+.mainAboutUs .frequentQuestion {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.mainAboutUs .frequentAnswer {
+  margin-left: 1rem;
+  font-style: italic;
+  color: black;
 }
 
 /*# sourceMappingURL=styles.css.map */

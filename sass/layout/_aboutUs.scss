@@ -1,0 +1,70 @@
+@import "../utilities/variables";
+
+.mainAboutUs {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+    font-family: $font-main;
+    color: black;
+    background-color: white;
+
+    h2 {
+        font-size: 3rem;
+        color: black;
+        margin-bottom: 1rem;
+    }
+
+    .aboutUs {
+        .aboutUsContent {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+
+            p {
+                flex: 2;
+                font-size: 1rem;
+                line-height: 1.6;
+                text-align: justify;
+            }
+
+            .aboutUsImg {
+                flex: 1;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .contact {
+        background-color: $color-primary;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        border: solid 2px black;
+        color: black;
+        box-shadow: 2px 3px 0px 0px rgb(0, 0, 0, 1);
+
+        h2 {
+            margin-bottom: 1rem;
+        }
+
+        p {
+            margin: 0.3rem 0;
+        }
+    }
+
+    .frequentQuestion {
+        font-weight: bold;
+        margin-top: 1rem;
+    }
+
+    .frequentAnswer {
+        margin-left: 1rem;
+        font-style: italic;
+        color: black;
+    }
+}
