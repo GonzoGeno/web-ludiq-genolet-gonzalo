@@ -1,0 +1,13 @@
+
+/*primero se invoca a los archivos de utilities*/
+
+@import "./components/mediumCards";
+@import "./layout/mainIndex";
+@import "./utilities/variables";
+@import "./layout/header";
+@import "./base/reset";
+@import "./layout/footer";
+@import "./components/BigCards";
+@import "./components/newsCardsIndex";
+@import "./layout/media/mediaMobile";
+@import "./layout/media/mediaTablet";

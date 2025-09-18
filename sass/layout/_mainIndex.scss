@@ -1,0 +1,76 @@
+@import "../utilities/variables";
+
+
+.mainIndex {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: $color-background-main; // desde variables
+  padding-top: 6rem;
+  color: $color-text-main;
+
+  section {
+    h2 {
+      font-size: 2rem;
+      color: $color-text-main;
+      margin-bottom: 1rem;
+    }
+
+    .viewAllButton {
+      margin-bottom: 1rem;
+
+      &:hover {
+        transform:scale(1.01);
+      }
+
+      a {
+        font-weight: bold;
+        color: $color-primary;
+        text-decoration: underline;
+
+
+      }
+    }
+  }
+
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+
+    &:hover {
+      box-shadow: .625rem .625rem .625rem black;
+      transform: scale(1.02);
+    }
+
+    .imageLink {
+      display: block;
+      position: relative;
+
+      .bannerImage {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 0.5rem;
+      }
+
+      .textoOverlay {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        color: $color-text-overlay;
+        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+
+        h1 {
+          font-size: 3rem;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

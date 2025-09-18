@@ -1,0 +1,85 @@
+  .bigCardContainer,
+  .upComming .bigCard {
+      .bigCard {
+          width: 100%;
+          height: 20rem;
+          display: flex;
+          background-color: $color-card-bg;
+          border-radius: 0.5rem;
+          overflow: hidden;
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+          padding: 1rem;
+          border: solid black;
+
+          .bigCardImg {
+              flex: 1 1 20%;
+
+              img {
+                  width: 90%;
+                  height: 100%;
+                  object-fit: fill;
+                  display: block;
+                  border-style: solid;
+                  border-color: black;
+                  border-radius: 0.5rem;
+
+                  &:hover {
+                      transform: scale(1.2);
+                      
+
+                  }
+              }
+          }
+
+          .contentBigCard {
+              flex: 1 1 60%;
+              padding: 1rem;
+              display: flex;
+              flex-direction: column;
+              align-items: start;
+              gap: 0.5rem;
+
+              p {
+                  color: $color-text-main;
+              }
+
+              h3 {
+                  font-size: 3rem;
+                  margin: 0.2rem 0;
+              }
+
+              .price {
+                  font-weight: bold;
+                  color: $color-price;
+                  font-size: 2rem;
+              }
+
+              .buttonsBigCard {
+                  display: flex;
+                  gap: 1rem;
+                  margin-top: auto;
+
+                  a {
+                      text-align: center;
+                      padding: 0.5rem 1rem;
+                      border-radius: 0.3rem;
+                      font-weight: bold;
+
+                      &.detailsButton {
+                          background-color: $color-btn-details;
+                          
+                      }
+
+                      &.buyNowButton {
+                          background-color: $color-btn-buy;
+                      }
+
+                      &:hover {
+                          opacity: 0.9;
+                          transform: scale(1.1);
+                      }
+                  }
+              }
+          }
+      }
+  }

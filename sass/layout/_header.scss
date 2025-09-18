@@ -1,0 +1,73 @@
+@import "../utilities/variables";
+
+.headerIndex {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem 1rem;
+  background-color: $color-secondary;
+  border-bottom: 0.125rem solid $color-border;
+
+  .logo {
+    img {
+      height: 2.5rem;
+      width: auto;
+      border-bottom: 2px solid $color-primary;
+    }
+  }
+
+  .navContainer {
+    display: flex;
+    justify-content: center;
+
+    .navBar {
+      list-style: none;
+      display: flex;
+      gap: $gap-medium;
+      margin: 0;
+      padding: 0;
+
+      li {
+        a {
+          font-family: $font-main;
+          font-size: 1rem;
+          color: $color-light;
+          text-decoration: underline $color-primary;
+          text-decoration-thickness: 0.1rem;
+          transition: color 0.3s;
+
+          &:hover {
+            color: $color-warning;
+          }
+        }
+      }
+    }
+  }
+
+  .userActions {
+    display: flex;
+    align-items: center;
+    gap: $gap-small;
+    font-family: $font-main;
+
+    a {
+      color: $color-light;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+      transition: color 0.3s, border-color 0.3s;
+
+      &.userProfile {
+        border-bottom-color: $color-primary;
+      }
+
+      &:hover {
+        color: $color-warning;
+      }
+    }
+  }
+}

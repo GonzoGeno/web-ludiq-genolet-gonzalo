@@ -1,0 +1,104 @@
+// HEADER //
+@media (min-width: 768px) and (max-width: 1023px) {
+  .headerIndex {
+    padding: 0.75rem 1.5rem;
+
+    .logo img {
+      height: 2.25rem;
+    }
+
+    .navContainer .navBar {
+      gap: 1rem;
+
+      li a {
+        font-size: 1rem;
+      }
+    }
+
+    .userActions {
+      gap: 0.75rem;
+    }
+  }
+}
+
+// HEADER //
+
+//  FOOTER  //
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+
+    .logoIndex img {
+      height: 2.2rem;
+    }
+
+    a:not(.logoIndex) img {
+      height: 1.3rem;
+    }
+
+    nav {
+      ul.informationNav {
+        justify-content: center;
+        gap: 0.8rem;
+      }
+    }
+  }
+}
+
+//  FOOTER  //
+
+//  MAIN / INDEX  //
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mainIndex {
+    padding: 5rem;
+
+    .imageContainer .textoOverlay {
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .bigCard {
+      height: auto;
+
+      .bigCardImg {
+        flex: 1 1 30%;
+
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+
+      .contentBigCard {
+        flex: 1 1 70%;
+
+        h3 {
+          font-size: 2rem;
+        }
+
+        .price {
+          font-size: 1.5rem;
+        }
+      }
+    }
+
+    .mediumCardsContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blogAndNews .newsGridContainer {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+// MAIN / INDEX   //

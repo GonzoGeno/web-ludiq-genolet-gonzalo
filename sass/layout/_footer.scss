@@ -1,0 +1,57 @@
+.footer {
+  background-color: $color-secondary;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+
+  .logoIndex {
+    img {
+      height: 2.5rem;
+      width: auto;
+    }
+  }
+
+  a {
+    &:not(.logoIndex) {
+      display: inline-block;
+      margin: 0 0.5rem;
+
+      img {
+        height: 1.5rem;
+        width: auto;
+      }
+    }
+  }
+
+  p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+
+  nav {
+    ul.informationNav {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0;
+      margin: 0;
+
+      li a {
+        color: white;
+        text-decoration: underline rgb(149, 255, 117);
+        text-decoration-thickness: 0.1rem;
+        transition: color 0.3s;
+
+        &:hover {
+          color: $color-warning;
+        }
+      }
+    }
+  }
+}

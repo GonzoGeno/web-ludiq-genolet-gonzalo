@@ -1,13 +1,11 @@
-/*primero se invoca a los archivos de utilities*/
 .mediumCardsContainer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
-  align-items: center;
 }
 .mediumCardsContainer .mediumCard {
-  background-color: rgba(217, 217, 217, 0.36);
+  background-color: wheat;
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
@@ -17,9 +15,6 @@
   max-width: 100%;
   border-radius: 8px;
   margin-bottom: 1rem;
-}
-.mediumCardsContainer .mediumCard img:hover {
-  transform: scale(1.2);
 }
 .mediumCardsContainer .mediumCard h3 {
   margin: 0.5rem 0;
@@ -40,17 +35,9 @@
   background: rgb(68, 68, 68);
   color: #fff;
 }
-.mediumCardsContainer .mediumCard a.detailsButton:hover {
-  opacity: 0.9;
-  transform: scale(1.1);
-}
 .mediumCardsContainer .mediumCard a.buyNowButton {
   background: #ff4500;
   color: #fff;
-}
-.mediumCardsContainer .mediumCard a.buyNowButton:hover {
-  opacity: 0.9;
-  transform: scale(1.1);
 }
 
 .mainIndex {
@@ -70,22 +57,15 @@
 .mainIndex section .viewAllButton {
   margin-bottom: 1rem;
 }
-.mainIndex section .viewAllButton:hover {
-  transform: scale(1.01);
-}
 .mainIndex section .viewAllButton a {
   font-weight: bold;
-  color: rgb(149, 255, 117);
+  color: rgb(42, 42, 42);
   text-decoration: underline;
 }
 .mainIndex .imageContainer {
   position: relative;
   width: 100%;
   height: auto;
-}
-.mainIndex .imageContainer:hover {
-  box-shadow: 0.625rem 0.625rem 0.625rem black;
-  transform: scale(1.02);
 }
 .mainIndex .imageContainer .imageLink {
   display: block;
@@ -110,6 +90,33 @@
 }
 .mainIndex .imageContainer .imageLink .textoOverlay p {
   font-size: 1.2rem;
+}
+.mainIndex .blogAndNews .newsGridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.mainIndex .blogAndNews .newsGridContainer .newsCard {
+  background-color: rgba(217, 217, 217, 0.36);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.mainIndex .blogAndNews .newsGridContainer .newsCard img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+.mainIndex .blogAndNews .newsGridContainer .newsCard h3 {
+  margin: 0.5rem;
+  font-size: 1.2rem;
+  color: white;
+}
+.mainIndex .blogAndNews .newsGridContainer .newsCard p {
+  margin: 0.5rem;
+  font-size: 0.95rem;
+  color: white;
 }
 
 .headerIndex {
@@ -263,26 +270,17 @@ input, textarea {
   border-radius: 0.5rem;
   overflow: hidden;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-  padding: 1rem;
-  border: solid black;
 }
 .bigCardContainer .bigCard .bigCardImg,
 .upComming .bigCard .bigCard .bigCardImg {
-  flex: 1 1 20%;
+  flex: 1 1 40%;
 }
 .bigCardContainer .bigCard .bigCardImg img,
 .upComming .bigCard .bigCard .bigCardImg img {
-  width: 90%;
+  width: 100%;
   height: 100%;
   object-fit: fill;
   display: block;
-  border-style: solid;
-  border-color: black;
-  border-radius: 0.5rem;
-}
-.bigCardContainer .bigCard .bigCardImg img:hover,
-.upComming .bigCard .bigCard .bigCardImg img:hover {
-  transform: scale(1.2);
 }
 .bigCardContainer .bigCard .contentBigCard,
 .upComming .bigCard .bigCard .contentBigCard {
@@ -332,242 +330,6 @@ input, textarea {
 .bigCardContainer .bigCard .contentBigCard .buttonsBigCard a:hover,
 .upComming .bigCard .bigCard .contentBigCard .buttonsBigCard a:hover {
   opacity: 0.9;
-  transform: scale(1.1);
 }
 
-.blogAndNews .newsGridContainer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-}
-.blogAndNews .newsGridContainer .newsCard {
-  background-color: rgba(217, 217, 217, 0.36);
-  border-radius: 0.5rem;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-.blogAndNews .newsGridContainer .newsCard:hover {
-  transform: scale(1.1);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
-}
-.blogAndNews .newsGridContainer .newsCard img {
-  width: 100%;
-  height: 10rem;
-  object-fit: cover;
-}
-.blogAndNews .newsGridContainer .newsCard h3 {
-  margin: 0.5rem;
-  font-size: 1.2rem;
-  color: white;
-}
-.blogAndNews .newsGridContainer .newsCard p {
-  margin: 0.5rem;
-  font-size: 0.95rem;
-  color: white;
-}
-
-@media (max-width: 767px) {
-  .headerIndex {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0.5rem 1rem;
-  }
-  .headerIndex .logo {
-    margin-bottom: 0.5rem;
-  }
-  .headerIndex .logo img {
-    height: 2rem;
-  }
-  .headerIndex .navContainer {
-    width: 100%;
-  }
-  .headerIndex .navContainer .navBar {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .headerIndex .navContainer .navBar li a {
-    font-size: 0.9rem;
-  }
-  .headerIndex .userActions {
-    margin-top: 0.5rem;
-    width: 100%;
-    justify-content: flex-end;
-  }
-}
-@media (max-width: 767px) {
-  .footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 0.75rem;
-  }
-  .footer .logoIndex img {
-    max-width: 7.5rem;
-    height: auto;
-  }
-  .footer a:not(.logoIndex) img {
-    max-width: 1.5rem;
-    height: auto;
-  }
-  .footer p {
-    font-size: 0.8rem;
-  }
-  .footer nav ul.informationNav {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .footer nav ul.informationNav li a {
-    font-size: 0.85rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  .mainIndex {
-    padding: 1rem;
-    gap: 2rem;
-    margin-top: 11rem;
-  }
-  .mainIndex .imageContainer .imageLink .textoOverlay h1 {
-    font-size: 1.5rem;
-  }
-  .mainIndex .imageContainer .imageLink .textoOverlay p {
-    font-size: 0.9rem;
-  }
-  .mainIndex section h2 {
-    font-size: 1.5rem;
-  }
-  .mainIndex section .viewAllButton a {
-    font-size: 0.9rem;
-  }
-  .mainIndex .bigCardContainer .bigCard,
-  .mainIndex .upComming .bigCard .bigCard {
-    flex-direction: column;
-    height: auto;
-  }
-  .mainIndex .bigCardContainer .bigCard .bigCardImg img,
-  .mainIndex .upComming .bigCard .bigCard .bigCardImg img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  .mainIndex .bigCardContainer .bigCard .contentBigCard,
-  .mainIndex .upComming .bigCard .bigCard .contentBigCard {
-    flex: 1 1 100%;
-  }
-  .mainIndex .bigCardContainer .bigCard .contentBigCard h3,
-  .mainIndex .upComming .bigCard .bigCard .contentBigCard h3 {
-    font-size: 1.5rem;
-  }
-  .mainIndex .bigCardContainer .bigCard .contentBigCard .price,
-  .mainIndex .upComming .bigCard .bigCard .contentBigCard .price {
-    font-size: 1.2rem;
-  }
-  .mainIndex .bigCardContainer .bigCard .contentBigCard .buttonsBigCard,
-  .mainIndex .upComming .bigCard .bigCard .contentBigCard .buttonsBigCard {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .mainIndex .bigCardContainer .bigCard .contentBigCard .buttonsBigCard a,
-  .mainIndex .upComming .bigCard .bigCard .contentBigCard .buttonsBigCard a {
-    padding: 0.5rem;
-    font-size: 0.9rem;
-  }
-  .mainIndex .blogAndNews .newsGridContainer {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .mainIndex .blogAndNews .newsGridContainer .newsCard h3 {
-    font-size: 1rem;
-  }
-  .mainIndex .blogAndNews .newsGridContainer .newsCard p {
-    font-size: 0.8rem;
-  }
-  .mainIndex .mediumCardsContainer {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .mainIndex .mediumCardsContainer .mediumCard h3 {
-    font-size: 1rem;
-  }
-  .mainIndex .mediumCardsContainer .mediumCard .price {
-    font-size: 1rem;
-  }
-  .mainIndex .mediumCardsContainer .mediumCard a {
-    padding: 0.4rem 0.6rem;
-    font-size: 0.8rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .headerIndex {
-    padding: 0.75rem 1.5rem;
-  }
-  .headerIndex .logo img {
-    height: 2.25rem;
-  }
-  .headerIndex .navContainer .navBar {
-    gap: 1rem;
-  }
-  .headerIndex .navContainer .navBar li a {
-    font-size: 1rem;
-  }
-  .headerIndex .userActions {
-    gap: 0.75rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .footer {
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-  .footer .logoIndex img {
-    height: 2.2rem;
-  }
-  .footer a:not(.logoIndex) img {
-    height: 1.3rem;
-  }
-  .footer nav ul.informationNav {
-    justify-content: center;
-    gap: 0.8rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .mainIndex {
-    padding: 5rem;
-  }
-  .mainIndex .imageContainer .textoOverlay h1 {
-    font-size: 2rem;
-  }
-  .mainIndex .imageContainer .textoOverlay p {
-    font-size: 1rem;
-  }
-  .mainIndex .bigCard {
-    height: auto;
-  }
-  .mainIndex .bigCard .bigCardImg {
-    flex: 1 1 30%;
-  }
-  .mainIndex .bigCard .bigCardImg img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  .mainIndex .bigCard .contentBigCard {
-    flex: 1 1 70%;
-  }
-  .mainIndex .bigCard .contentBigCard h3 {
-    font-size: 2rem;
-  }
-  .mainIndex .bigCard .contentBigCard .price {
-    font-size: 1.5rem;
-  }
-  .mainIndex .mediumCardsContainer {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .mainIndex .blogAndNews .newsGridContainer {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */
