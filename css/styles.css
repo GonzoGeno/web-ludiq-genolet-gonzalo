@@ -421,7 +421,7 @@ input, textarea {
     font-size: 0.85rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media (max-width: 767px) {
   .mainIndex {
     padding: 1rem;
     gap: 2rem;
@@ -504,7 +504,7 @@ input, textarea {
   }
   .mainAboutUs h2 {
     padding-top: 8rem;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
   }
   .mainAboutUs .aboutUs .aboutUsContent {
@@ -513,7 +513,7 @@ input, textarea {
     gap: 1rem;
   }
   .mainAboutUs .aboutUs .aboutUsContent p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: left;
   }
   .mainAboutUs .aboutUs .aboutUsContent .aboutUsImg {
@@ -536,7 +536,168 @@ input, textarea {
   }
   .mainAboutUs .frequentQuestion,
   .mainAboutUs .frequentAnswer {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 767px) {
+  .mainNews {
+    padding: 1rem;
+  }
+  .mainNews h2 {
+    margin-top: 8rem;
+    font-size: 2rem;
+  }
+  .mainNews .latestNews {
+    grid-template-columns: 1fr;
+  }
+  .mainNews .latestNews .newsBigCard .newsBigCardBanner img {
+    height: 12rem;
+  }
+  .mainNews .latestNews .newsBigCard .newsBigCardInfo h3 {
+    font-size: 1.2rem;
+  }
+  .mainNews .latestNews .newsBigCard .newsBigCardInfo p {
     font-size: 0.9rem;
+  }
+  .mainNews .otherNews {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .mainNews .otherNews .otherNewsCard .oterNewsCardBanner img {
+    height: 8rem;
+  }
+  .mainNews .otherNews .otherNewsCard .otherNewsCardInfo h4 {
+    font-size: 1rem;
+  }
+  .mainNews .otherNews .otherNewsCard .otherNewsCardInfo p {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 767px) {
+  .profileMain {
+    padding: 1rem;
+    gap: 2rem;
+  }
+  .profileMain h2,
+  .profileMain h3 {
+    font-size: 1.5rem;
+  }
+  .profileMain .profile .profileBanner img {
+    height: 10rem;
+  }
+  .profileMain .profile .profileInfo {
+    flex-direction: column;
+    align-items: center;
+    margin-top: -2rem;
+    padding: 1rem;
+  }
+  .profileMain .profile .profileInfo .profileAvatar img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .profileMain .profile .profileInfo .profileText h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .profileMain .profile .profileInfo .status {
+    font-size: 0.9rem;
+  }
+  .profileMain .profile .profileInfo .editProfile {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 1rem;
+  }
+  .profileMain .profileStats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .profileMain .profileStats div {
+    padding: 0.8rem;
+  }
+  .profileMain .profileStats div h3 {
+    font-size: 1rem;
+  }
+  .profileMain .profileStats div p {
+    font-size: 1.2rem;
+  }
+  .profileMain .recentlyPlayed .recentGames {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .profileMain .recentlyPlayed .recentGames .recentCard {
+    flex-direction: column;
+  }
+  .profileMain .recentlyPlayed .recentGames .recentCard .recentImg img {
+    height: 8rem;
+  }
+  .profileMain .recentlyPlayed .recentGames .recentCard .recentText {
+    padding: 0.5rem;
+  }
+  .profileMain .recentlyPlayed .recentGames .recentCard .recentText .gameName {
+    font-size: 1rem;
+  }
+  .profileMain .recentlyPlayed .recentGames .recentCard .recentText .lastPlayed {
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .gameMain {
+    display: grid;
+    grid-template-areas: "content" "sidebar";
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .gameMain .gameContent {
+    margin-top: 6rem;
+    grid-area: content;
+  }
+  .gameMain .gameContent .gameTitle {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .gameMain .gameContent .rating {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  .gameMain .gameContent .mainImage img {
+    width: 100%;
+    height: auto;
+  }
+  .gameMain .gameContent .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+  }
+  .gameMain .gameContent .gallery img {
+    width: 100%;
+    height: 6rem;
+    object-fit: cover;
+  }
+  .gameMain .gameContent .tags {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .gameMain .gameContent .systemReqs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .gameMain .gameSidebar {
+    margin-top: 6rem;
+    grid-area: sidebar;
+    margin-top: 0;
+    display: grid;
+    gap: 0.8rem;
+  }
+  .gameMain .gameSidebar .price {
+    font-size: 1.5rem;
+  }
+  .gameMain .gameSidebar .languages .languagesGrid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -576,7 +737,8 @@ input, textarea {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .mainIndex {
-    padding: 5rem;
+    padding: 1rem;
+    margin-top: 3rem;
   }
   .mainIndex .imageContainer .textoOverlay h1 {
     font-size: 2rem;
@@ -645,6 +807,133 @@ input, textarea {
     font-size: 1rem;
   }
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mainNews {
+    padding: 1.5rem;
+  }
+  .mainNews h2 {
+    font-size: 2.2rem;
+  }
+  .mainNews .latestNews {
+    grid-template-columns: 1fr 1fr;
+  }
+  .mainNews .latestNews .newsBigCard .newsBigCardBanner img {
+    height: 13rem;
+  }
+  .mainNews .otherNews {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+  .mainNews .otherNews .otherNewsCard .oterNewsCardBanner img {
+    height: 9rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .profileMain {
+    padding: 1.5rem;
+    gap: 2.5rem;
+  }
+  .profileMain h2,
+  .profileMain h3 {
+    font-size: 2rem;
+  }
+  .profileMain .profile .profileBanner img {
+    height: 12rem;
+  }
+  .profileMain .profile .profileInfo {
+    flex-direction: row;
+    align-items: center;
+    margin-top: -2.5rem;
+    padding: 1.2rem;
+  }
+  .profileMain .profile .profileInfo .profileAvatar img {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  .profileMain .profile .profileInfo .profileText h2 {
+    font-size: 1.8rem;
+  }
+  .profileMain .profile .profileInfo .status {
+    font-size: 1rem;
+  }
+  .profileMain .profile .profileInfo .editProfile {
+    padding: 0.5rem 1.2rem;
+  }
+  .profileMain .profileStats {
+    gap: 1rem;
+  }
+  .profileMain .profileStats div {
+    padding: 0.9rem;
+  }
+  .profileMain .profileStats div h3 {
+    font-size: 1.2rem;
+  }
+  .profileMain .profileStats div p {
+    font-size: 1.3rem;
+  }
+  .profileMain .recentlyPlayed .recentGames {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .profileMain .recentlyPlayed .recentGames .recentCard {
+    flex-direction: row;
+  }
+  .profileMain .recentlyPlayed .recentGames .recentCard .recentImg img {
+    height: 9rem;
+  }
+  .profileMain .recentlyPlayed .recentGames .recentCard .recentText {
+    padding: 0.7rem;
+  }
+  .profileMain .recentlyPlayed .recentGames .recentCard .recentText .gameName {
+    font-size: 1.1rem;
+  }
+  .profileMain .recentlyPlayed .recentGames .recentCard .recentText .lastPlayed {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .gameMain {
+    flex-direction: row;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  .gameMain .gameContent .gameTitle {
+    font-size: 2.5rem;
+  }
+  .gameMain .gameContent .rating {
+    font-size: 1.3rem;
+  }
+  .gameMain .gameContent .mainImage img {
+    height: auto;
+  }
+  .gameMain .gameContent .gallery img {
+    width: calc(33.33% - 0.7rem);
+    height: 7rem;
+  }
+  .gameMain .gameContent .tags {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .gameMain .gameContent .systemReqs {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+  .gameMain .gameSidebar {
+    margin-top: 4rem;
+  }
+  .gameMain .gameSidebar .price {
+    font-size: 1.8rem;
+  }
+  .gameMain .gameSidebar .buttonBuy,
+  .gameMain .gameSidebar .buttonsSidebar {
+    width: 100%;
+    text-align: center;
+  }
+  .gameMain .gameSidebar .languages .languagesGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 .mainAboutUs {
   margin-top: 3rem;
   display: flex;
@@ -700,6 +989,409 @@ input, textarea {
   margin-left: 1rem;
   font-style: italic;
   color: black;
+}
+
+.mainNews {
+  margin-top: 3.5rem;
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  background-color: rgb(73, 73, 100);
+}
+.mainNews h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: white;
+  text-align: center;
+  border-bottom: solid rgb(149, 255, 117);
+}
+
+.latestNews {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.latestNews .newsBigCard {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(217, 217, 217, 0.36);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.latestNews .newsBigCard:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+.latestNews .newsBigCard .newsBigCardBanner {
+  position: relative;
+}
+.latestNews .newsBigCard .newsBigCardBanner img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  display: block;
+}
+.latestNews .newsBigCard .newsBigCardBanner p {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+}
+.latestNews .newsBigCard .newsBigCardInfo {
+  padding: 1rem;
+}
+.latestNews .newsBigCard .newsBigCardInfo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.latestNews .newsBigCard .newsBigCardInfo p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+.latestNews .newsBigCard .newsBigCardInfo .readMore {
+  color: rgb(149, 255, 117);
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.latestNews .newsBigCard .newsBigCardInfo .readMore:hover {
+  color: rgb(255, 215, 0);
+}
+
+.otherNews {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+.otherNews .otherNewsCard {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(217, 217, 217, 0.36);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.otherNews .otherNewsCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+.otherNews .otherNewsCard .oterNewsCardBanner {
+  position: relative;
+}
+.otherNews .otherNewsCard .oterNewsCardBanner img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+.otherNews .otherNewsCard .oterNewsCardBanner p {
+  position: absolute;
+  bottom: 0.3rem;
+  left: 0.5rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.2rem;
+}
+.otherNews .otherNewsCard .otherNewsCardInfo {
+  padding: 0.8rem;
+}
+.otherNews .otherNewsCard .otherNewsCardInfo h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+.otherNews .otherNewsCard .otherNewsCardInfo p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.profileMain {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: rgb(73, 73, 100);
+}
+.profileMain h2, .profileMain h3 {
+  color: white;
+  margin-bottom: 1rem;
+}
+.profileMain .profile .profileBanner img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.profileMain .profile .profileInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-top: -3rem;
+  padding: 1.5rem;
+  background: rgba(217, 217, 217, 0.36);
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+.profileMain .profile .profileInfo .profileAvatar img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 3px solid rgb(149, 255, 117);
+}
+.profileMain .profile .profileInfo .profileText {
+  flex: 1;
+}
+.profileMain .profile .profileInfo .profileText h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+.profileMain .profile .profileInfo .profileText .status {
+  font-style: italic;
+  color: rgb(149, 255, 117);
+}
+.profileMain .profile .profileInfo .editProfile {
+  padding: 0.6rem 1.2rem;
+  background-color: rgb(149, 255, 117);
+  border: none;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.profileMain .profile .profileInfo .editProfile:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+.profileMain .profileStats {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+}
+.profileMain .profileStats div {
+  flex: 1;
+  text-align: center;
+  background: rgba(217, 217, 217, 0.36);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+}
+.profileMain .profileStats div:hover {
+  transform: translateY(-5px);
+}
+.profileMain .profileStats div h3 {
+  margin-bottom: 0.5rem;
+}
+.profileMain .profileStats div p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #95ff75;
+}
+
+.recentlyPlayed h3 {
+  margin-bottom: 1rem;
+}
+.recentlyPlayed .recentGames {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(1rem, 1fr));
+  gap: 2rem;
+}
+.recentlyPlayed .recentGames .recentCard {
+  display: flex;
+  flex-direction: row;
+  background: rgba(217, 217, 217, 0.36);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+.recentlyPlayed .recentGames .recentCard:hover {
+  transform: scale(1.03);
+}
+.recentlyPlayed .recentGames .recentCard .recentImg img {
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+}
+.recentlyPlayed .recentGames .recentCard .recentText {
+  padding: 0.8rem;
+}
+.recentlyPlayed .recentGames .recentCard .recentText .gameName {
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+.recentlyPlayed .recentGames .recentCard .recentText .lastPlayed {
+  font-size: 0.9rem;
+  color: rgb(149, 255, 117);
+}
+
+.gameMain {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  background-color: rgb(73, 73, 100);
+}
+.gameMain .gameContent {
+  flex: 2;
+}
+.gameMain .gameContent .gameTitle {
+  font-size: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+.gameMain .gameContent .rating {
+  font-size: 1.5rem;
+  color: rgb(255, 215, 0);
+  margin-bottom: 1rem;
+}
+.gameMain .gameContent .mainImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+.gameMain .gameContent .mainImage img:hover {
+  transform: scale(1.02);
+}
+.gameMain .gameContent .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+.gameMain .gameContent .gallery img {
+  width: calc(20% - 0.8rem);
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+.gameMain .gameContent .gallery img:hover {
+  transform: scale(1.1);
+}
+.gameMain .gameContent .gameDescription {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.gameMain .gameContent .tags {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.gameMain .gameContent .tags .genres h3,
+.gameMain .gameContent .tags .features h3 {
+  color: rgb(149, 255, 117);
+  margin-bottom: 0.5rem;
+}
+.gameMain .gameContent .tags .genres p,
+.gameMain .gameContent .tags .features p {
+  margin: 0.2rem 0;
+}
+.gameMain .gameContent .systemRequirementsTitle {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: rgb(149, 255, 117);
+}
+.gameMain .gameContent .systemReqs {
+  display: flex;
+  gap: 2rem;
+}
+.gameMain .gameContent .systemReqs div {
+  background: rgba(217, 217, 217, 0.36);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.gameMain .gameContent .systemReqs div h4 {
+  margin-bottom: 0.5rem;
+}
+.gameMain .gameContent .systemReqs div p {
+  margin: 0.2rem 0;
+}
+.gameMain .gameSidebar {
+  margin-top: 8.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.gameMain .gameSidebar .gameLogo img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.gameMain .gameSidebar .edition {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.gameMain .gameSidebar .price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #95ff75;
+}
+.gameMain .gameSidebar .buttonBuy {
+  padding: 0.6rem 1.2rem;
+  background-color: #ff4500;
+  border: none;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.gameMain .gameSidebar .buttonBuy:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+.gameMain .gameSidebar .buttonsSidebar {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: rgb(42, 42, 42);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.gameMain .gameSidebar .buttonsSidebar:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+.gameMain .gameSidebar .gameDetails h3 {
+  margin-bottom: 0.5rem;
+  color: rgb(149, 255, 117);
+}
+.gameMain .gameSidebar .gameDetails p {
+  margin: 0.2rem 0;
+}
+.gameMain .gameSidebar .languages h3 {
+  margin-bottom: 0.5rem;
+  color: rgb(149, 255, 117);
+}
+.gameMain .gameSidebar .languages .languagesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  text-align: center;
+}
+.gameMain .gameSidebar .languages .languagesGrid .category {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=styles.css.map */

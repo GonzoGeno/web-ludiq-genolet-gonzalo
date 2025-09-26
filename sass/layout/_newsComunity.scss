@@ -1,0 +1,17 @@
+@import "../utilities/variables";
+
+.mainNews {
+  margin-top: 3.5rem;
+  padding: 2rem;
+  font-family: $font-main;
+  color: black;
+  background-color: $color-background-main;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+    border-bottom: solid $color-primary;
+  }
+}

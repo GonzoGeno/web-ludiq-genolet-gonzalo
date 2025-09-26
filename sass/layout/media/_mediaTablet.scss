@@ -53,7 +53,8 @@
 //  MAIN / INDEX  //
 @media (min-width: 768px) and (max-width: 1023px) {
   .mainIndex {
-    padding: 5rem;
+    padding: 1rem;
+    margin-top: 3rem;
 
     .imageContainer .textoOverlay {
       h1 {
@@ -129,6 +130,7 @@
 
         .aboutUsImg {
           width: 80%;
+
           img {
             width: 100%;
             border-radius: 0.3rem;
@@ -150,3 +152,191 @@
 }
 
 //  ABUT US  //
+
+
+//  NEWS / COMUNITY  //
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mainNews {
+    padding: 1.5rem;
+
+    h2 {
+      font-size: 2.2rem;
+    }
+
+    .latestNews {
+      grid-template-columns: 1fr 1fr;
+
+      .newsBigCard .newsBigCardBanner img {
+        height: 13rem;
+      }
+    }
+
+    .otherNews {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.2rem;
+
+      .otherNewsCard .oterNewsCardBanner img {
+        height: 9rem;
+      }
+    }
+  }
+}
+
+//  NEWS / COMUNITY  //
+
+
+//  PROFILE / USER  //
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .profileMain {
+    padding: 1.5rem;
+    gap: 2.5rem;
+
+    h2,
+    h3 {
+      font-size: 2rem;
+    }
+
+    .profile {
+      .profileBanner {
+        img {
+          height: 12rem;
+        }
+      }
+
+      .profileInfo {
+        flex-direction: row;
+        align-items: center;
+        margin-top: -2.5rem;
+        padding: 1.2rem;
+
+        .profileAvatar img {
+          width: 5.5rem;
+          height: 5.5rem;
+        }
+
+        .profileText h2 {
+          font-size: 1.8rem;
+        }
+
+        .status {
+          font-size: 1rem;
+        }
+
+        .editProfile {
+          padding: 0.5rem 1.2rem;
+        }
+      }
+    }
+
+    .profileStats {
+      gap: 1rem;
+
+      div {
+        padding: 0.9rem;
+
+        h3 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .recentlyPlayed {
+      .recentGames {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+
+        .recentCard {
+          flex-direction: row;
+
+          .recentImg img {
+            height: 9rem;
+          }
+
+          .recentText {
+            padding: 0.7rem;
+
+            .gameName {
+              font-size: 1.1rem;
+            }
+
+            .lastPlayed {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//  PROFILE / USER  //
+
+
+//  GAME PAGE  //
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .gameMain {
+    flex-direction: row;
+    padding: 1.5rem;
+    gap: 1.5rem;
+
+    .gameContent {
+      .gameTitle {
+        font-size: 2.5rem;
+      }
+
+      .rating {
+        font-size: 1.3rem;
+      }
+
+      .mainImage img {
+        height: auto;
+      }
+
+      .gallery {
+        img {
+          width: calc(33.33% - 0.7rem);
+          height: 7rem;
+        }
+      }
+
+      .tags {
+        flex-direction: row;
+        gap: 1.5rem;
+      }
+
+      .systemReqs {
+        flex-direction: row;
+        gap: 1.5rem;
+      }
+    }
+
+    .gameSidebar {
+      margin-top: 4rem;
+
+      .price {
+        font-size: 1.8rem;
+      }
+
+      .buttonBuy,
+      .buttonsSidebar {
+        width: 100%;
+        text-align: center;
+      }
+
+      .languages .languagesGrid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  }
+}
+
+
+//  GAME PAGE  //

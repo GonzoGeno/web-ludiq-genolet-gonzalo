@@ -1,0 +1,56 @@
+  .otherNews {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+
+    .otherNewsCard {
+      display: flex;
+      flex-direction: column;
+      background-color: $color-card-bg;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+      }
+
+      .oterNewsCardBanner {
+        position: relative;
+
+        img {
+          width: 100%;
+          height: 10rem;
+          object-fit: cover;
+        }
+
+        p {
+          position: absolute;
+          bottom: 0.3rem;
+          left: 0.5rem;
+          background: rgba(0, 0, 0, 0.6);
+          color: white;
+          font-size: 0.75rem;
+          padding: 0.2rem 0.4rem;
+          border-radius: 0.2rem;
+        }
+      }
+
+      .otherNewsCardInfo {
+        padding: 0.8rem;
+
+        h4 {
+          font-size: 1.2rem;
+          margin-bottom: 0.3rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+          line-height: 1.4;
+        }
+      }
+    }
+  }
